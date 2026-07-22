@@ -33,17 +33,18 @@ export function PortfolioGallery({
               : "";
 
           return (
-            <PortfolioCard
-  category={item.category}
-  title={item.title}
-  description={item.description}
-  client={item.client}
-  location={item.location}
-  image={item.image}
-  sizeClass={sizeClass}
-  onClick={() => setSelectedProject(item)}
-/>
-          );
+  <PortfolioCard
+    key={item.title}
+    category={item.category}
+    title={item.title}
+    description={item.description}
+    client={item.client}
+    location={item.location}
+    image={item.image}
+    sizeClass={sizeClass}
+    onClick={() => setSelectedProject(item)}
+  />
+);
         })}
       </section>
 
