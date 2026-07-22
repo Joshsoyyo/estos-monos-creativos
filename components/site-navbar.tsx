@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
@@ -41,7 +41,7 @@ export function SiteNavbar() {
         }`}
         aria-label="Navegaci\u00f3n principal"
       >
-        <a href="/" className="flex items-center" aria-label="Inicio">
+        <Link href="/" className="flex items-center" aria-label="Inicio">
   <Image
     src="/logos/logo-monos.png"
     alt="Estos Monos Creativos"
@@ -50,17 +50,17 @@ export function SiteNavbar() {
     className="h-20 w-auto transition duration-300 hover:opacity-90"
     priority
   />
-</a>
+</Link>
 
         <div className="hidden items-center gap-3 lg:flex">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="rounded-[var(--radius-md)] px-4 py-2.5 text-sm font-medium text-[var(--text-soft)] transition duration-[var(--duration-fast)] ease-[var(--ease-out)] hover:bg-[var(--surface-glass)] hover:text-[var(--color-white)]"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -110,14 +110,14 @@ export function SiteNavbar() {
       >
         <div className="grid gap-1">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="rounded-[var(--radius-lg)] px-4 py-3 text-base font-medium text-[var(--text-soft)] transition duration-[var(--duration-fast)] hover:bg-[var(--surface-glass)] hover:text-[var(--color-white)]"
               onClick={() => setIsMenuOpen(false)}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <a
             href="#"

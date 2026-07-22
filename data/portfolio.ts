@@ -52,7 +52,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: 6,
-    category: "Rotulación",
+    category: "Rotulacion",
     title: "Ambulancia Rotulada",
     description: "Con vinil reflejante de alta durabilidad",
     image: "/portfolio/rotulacion/ambu.jpeg",
@@ -82,7 +82,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: 9,
-    category: "Rotulación",
+    category: "Rotulacion",
     title: "Rotulacion de Ferrari",
     description: "Vinil de alta durabilidad y acabado premium",
     image: "/portfolio/rotulacion/ferra.jpeg",
@@ -172,7 +172,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: 18,
-    category: "Rotulación",
+    category: "Rotulacion",
     title: "Rotulacion de Camioneta",
     description: "Publicidad en dos ruedas",
     image: "/portfolio/rotulacion/pepe.jpeg",
@@ -182,7 +182,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: 19,
-    category: "Rotulación",
+    category: "Rotulacion",
     title: "Cambio de color",
     description: "Wrap automotriz",
     image: "/portfolio/rotulacion/swift.jpeg",

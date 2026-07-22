@@ -240,38 +240,7 @@ function ServiceNode({
   );
 }
 
-function ConnectionLines({ activeService }: { activeService: Service["id"] | null }) {
-  return (
-    <svg
-      aria-hidden="true"
-      className="pointer-events-none absolute inset-0 z-0 overflow-visible"
-      preserveAspectRatio="none"
-      viewBox="0 0 100 100"
-    >
-      {services.map((service) => {
-        const active = activeService === service.id;
 
-        return (
-          <motion.line
-            key={service.id}
-            animate={{
-              opacity: active ? 0.48 : 0.1,
-              stroke: active ? "rgb(255, 212, 0)" : "rgb(255, 255, 255)",
-            }}
-            initial={false}
-            strokeWidth="0.12"
-            transition={{ duration: 0.25, ease: "easeOut" }}
-            vectorEffect="non-scaling-stroke"
-            x1="50"
-            x2={service.line.x}
-            y1="50"
-            y2={service.line.y}
-          />
-        );
-      })}
-    </svg>
-  );
-}
 
 function MobileService({ service }: { service: Service }) {
   return (
