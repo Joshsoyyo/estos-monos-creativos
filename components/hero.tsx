@@ -24,7 +24,10 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen overflow-hidden bg-[var(--color-ink)] text-[var(--color-white)]">
+    <section
+  id="inicio"
+  className="relative flex min-h-screen overflow-hidden bg-[var(--color-ink)] text-[var(--color-white)]"
+>
       <HeroBackground />
 
       <Container className="relative z-[var(--z-content)] grid min-h-screen grid-cols-1 items-center gap-[var(--space-16)] py-36 sm:py-40 lg:grid-cols-[0.94fr_1.06fr] lg:py-32">
@@ -47,7 +50,7 @@ export function Hero() {
             transition={heroTitleStagger}
             className="max-w-4xl text-[clamp(3rem,10.8vw,8.55rem)]"
           >
-            <Title as="span" className="block overflow-hidden pb-3">
+            <Title as="span" className="block overflow-hidden pb-1">
               <motion.span
                 variants={heroReveal}
                 transition={transitions.reveal}
@@ -56,7 +59,7 @@ export function Hero() {
                 IMPRIME
               </motion.span>
             </Title>
-            <Title as="span" className="block overflow-hidden pb-3">
+            <Title as="span" className="block overflow-hidden pb-1">
               <motion.span
                 variants={heroReveal}
                 transition={transitions.reveal}
@@ -65,7 +68,7 @@ export function Hero() {
                 TUS
               </motion.span>
             </Title>
-            <Title as="span" className="block overflow-hidden pb-3">
+            <Title as="span" className="block overflow-hidden pb-1">
               <motion.span
                 variants={heroReveal}
                 transition={transitions.reveal}
@@ -77,7 +80,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.div variants={fadeUp} transition={{ ...transitions.base, delay: 0.3 }}>
-            <Subtitle className="mt-10">{services.join(" \u2022 ")}</Subtitle>
+            <Subtitle className="mt-3">{services.join(" \u2022 ")}</Subtitle>
             <p className="mt-4 max-w-xl text-sm font-medium leading-7 text-[var(--text-muted)] sm:text-base">
               Producción profesional para empresas, negocios y emprendedores.
             </p>
@@ -86,7 +89,7 @@ export function Hero() {
           <motion.div
             variants={fadeUp}
             transition={{ ...transitions.base, delay: 0.42 }}
-            className="mt-12 flex flex-col items-start gap-[var(--space-5)] sm:flex-row sm:items-center"
+            className="mt-6 flex flex-col items-start gap-[var(--space-5)] sm:flex-row sm:items-center"
           >
             <MagneticButton
   href="https://wa.me/524271021467?text=Hola%20%F0%9F%91%8B%0A%0AMe%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n."

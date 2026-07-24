@@ -7,11 +7,9 @@ import { MagneticButton } from "@/components/ui";
 import { fadeUp, menuReveal, transitions } from "@/lib/animations";
 
 const navItems = [
-  { label: "Inicio", href: "/" },
+  { label: "Inicio", href: "#inicio" },
   { label: "Servicios", href: "#servicios" },
   { label: "Portafolio", href: "/portafolio" },
-  { label: "Nosotros", href: "#nosotros" },
-  { label: "Contacto", href: "#contacto" },
 ];
 
 export function SiteNavbar() {

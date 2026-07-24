@@ -262,7 +262,7 @@ export function FabricationSection() {
 
   return (
     <Section
-  id="portafolio"
+  id="servicios"
   className="relative min-h-screen overflow-visible border-t border-white/10 py-24 sm:py-28 lg:py-24"
 >
       <div
