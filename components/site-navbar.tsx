@@ -7,8 +7,8 @@ import { MagneticButton } from "@/components/ui";
 import { fadeUp, menuReveal, transitions } from "@/lib/animations";
 
 const navItems = [
-  { label: "Inicio", href: "#inicio" },
-  { label: "Servicios", href: "#servicios" },
+  { label: "Inicio", href: "/#inicio" },
+{ label: "Servicios", href: "/#servicios" },
   { label: "Portafolio", href: "/portafolio" },
 ];
 
@@ -64,12 +64,12 @@ export function SiteNavbar() {
 
         <div className="hidden items-center lg:flex">
           <MagneticButton
-            href="#"
-            size="md"
-            className="rounded-[var(--radius-md)] px-6 shadow-[var(--shadow-yellow-soft)]"
-          >
-            Cotizar
-          </MagneticButton>
+  href="https://wa.me/524271021467?text=Hola%20👋%0A%0AMe%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n."
+  size="md"
+  className="rounded-[var(--radius-md)] px-6 shadow-[var(--shadow-yellow-soft)]"
+>
+  Cotizar
+</MagneticButton>
         </div>
 
         <button
@@ -118,12 +118,16 @@ export function SiteNavbar() {
             </Link>
           ))}
           <a
-            href="#"
-            className="mt-2 rounded-[var(--radius-lg)] bg-[var(--color-yellow)] px-4 py-3 text-center text-base font-bold text-[var(--color-ink)]"
-            onClick={() => setIsMenuOpen(false)}
-          >
+  href="https://wa.me/524271021467?text=Hola%20👋%0A%0AMe%20gustar%C3%ADa%20solicitar%20una%20cotizaci%C3%B3n."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-2 rounded-[var(--radius-lg)] bg-[var(--color-yellow)] px-4 py-3 text-center text-base font-bold text-[var(--color-ink)]"
+  onClick={() => setIsMenuOpen(false)}
+>
+  Cotizar
+</a>
             Cotizar
-          </a>
+          
         </div>
       </motion.div>
     </motion.header>

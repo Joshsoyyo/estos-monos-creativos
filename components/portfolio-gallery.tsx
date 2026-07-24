@@ -34,7 +34,7 @@ export function PortfolioGallery({
 
           return (
   <PortfolioCard
-    key={item.title}
+    key={item.id}
     category={item.category}
     title={item.title}
     description={item.description}
